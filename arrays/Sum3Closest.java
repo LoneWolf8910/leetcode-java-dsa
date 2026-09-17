@@ -80,3 +80,54 @@ class Sum3Closest {
         
     }
 }
+
+/*
+ * ============================================================
+ * Problem: 3Sum Closest
+ * Platform: LeetCode
+ * Difficulty: Medium
+ * Topic: Arrays
+ * Pattern: Sorting + Two Pointers
+ *
+ * Approach:
+ * First, we sort the array so that we can efficiently use
+ * the two-pointer technique.
+ *
+ * We fix one element using a loop and then use two pointers:
+ * one starting just after the fixed element and one at the
+ * end of the array.
+ *
+ * We calculate the current three-element sum and compare its
+ * difference from the target with the closest sum found so far.
+ *
+ * If the current sum is closer to the target, we update the
+ * closest sum.
+ *
+ * If the current sum is smaller than the target, we move the
+ * left pointer to the right to increase the sum.
+ *
+ * If the current sum is larger than the target, we move the
+ * right pointer to the left to decrease the sum.
+ *
+ * If the current sum equals the target, we have found the
+ * exact answer and can return it immediately.
+ *
+ * Time Complexity: O(n²)
+ * Space Complexity: O(1)*
+ *
+ * Why O(n²)?
+ * Sorting takes O(n log n), and after sorting we use an outer
+ * loop with a two-pointer traversal, resulting in O(n²) time.
+ * Since O(n²) dominates O(n log n), the overall complexity
+ * is O(n²).
+ *
+ * Why O(1) space?
+ * We use only a constant number of variables and pointers
+ * apart from the sorting implementation.
+ *
+ * This optimized approach is much faster than checking every
+ * possible combination of three elements using three nested
+ * loops, which would take O(n³) time.
+ *
+ * ============================================================
+ */
