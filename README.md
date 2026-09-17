@@ -84,10 +84,10 @@ My preparation is organized by topic so that I can progressively build my proble
 
 | Topic | Problems Solved |
 |-------|----------------:|
-| Arrays | 5 |
+| Arrays | 3 |
 | Strings | 0 |
 | Hashing | 0 |
-| Two Pointers | 0 |
+| Two Pointers | 2 |
 | Sliding Window | 0 |
 | Linked List | 0 |
 | Stack | 0 |
