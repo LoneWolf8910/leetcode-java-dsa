@@ -84,7 +84,7 @@ My preparation is organized by topic so that I can progressively build my proble
 
 | Topic | Problems Solved |
 |-------|----------------:|
-| Arrays | 3 |
+| Arrays | 4 |
 | Strings | 0 |
 | Hashing | 0 |
 | Two Pointers | 0 |
@@ -105,4 +105,4 @@ My preparation is organized by topic so that I can progressively build my proble
 Target: 200+ Quality DSA Problems
 
 Progress
-[█░░░░░░░░░] 3 / 200+
+[█░░░░░░░░░] 4 / 200+
