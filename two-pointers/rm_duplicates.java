@@ -2,6 +2,7 @@
 
 // Consider the number of unique elements in nums to be k​​​​​​​​​​​​​​. After removing duplicates, return the number of unique elements k.
 // The first k elements of nums should contain the unique numbers in sorted order. The remaining elements beyond index k - 1 can be ignored.
+
 // Custom Judge:
 // The judge will test your solution with the following code:
 // int[] nums = [...]; // Input array
@@ -25,8 +26,7 @@
 // Constraints:
 //     1 <= nums.length <= 3 * 104
 //     -100 <= nums[i] <= 100
-//     nums is sorted in non-decreasing order.
-// TWO POINTERS APPROACH
+//     nums is sorted in non-decreasing order.// TWO POINTERS APPROACH
 import java.util.Arrays;
 
 public class rm_duplicates {
@@ -35,10 +35,104 @@ public class rm_duplicates {
         Arrays.sort(nums);
         int n = nums.length;
         int pointer1 = 0;
-        for (int i = 0; i < n; i++) {
-
+        System.out.print(nums[pointer1]);
+        for (int i = 1; i < n; i++) {
+            if (nums[pointer1] != nums[i]) {
+                nums[pointer1 + 1] = nums[i];
+                pointer1++;
+                return nums[pointer1];
+            } else
+                continue;
         }
-
-        return 0;
+        return pointer1 + 1;
     }
 }
+
+/*
+ * ============================================================
+ * Problem: Remove Duplicates from Sorted Array
+ * Platform: LeetCode
+ * Difficulty: Easy
+ * Topic: Arrays
+ * Pattern: Two Pointers
+ *
+ * Approach:
+ * The array is already sorted in non-decreasing order, so
+ * duplicate elements will always appear next to each other.
+ *
+ * We use two pointers:
+ *
+ * 1. pointer1:
+ * Keeps track of the position of the last unique element.
+ *
+ * 2. i:
+ * Scans through the array from left to right to find new
+ * unique elements.
+ *
+ * We start pointer1 at index 0 because the first element is
+ * always considered unique.
+ *
+ * For every element nums[i], we compare it with the element
+ * at nums[pointer1].
+ *
+ * If they are different, we have found a new unique element.
+ * We place this new element at the position immediately after
+ * pointer1:
+ *
+ * nums[pointer1 + 1] = nums[i]
+ *
+ * Then we move pointer1 one position forward.
+ *
+ * If nums[i] is equal to nums[pointer1], it is a duplicate,
+ * so we simply ignore it and continue scanning.
+ *
+ * At the end, pointer1 represents the index of the last unique
+ * element. Therefore, the number of unique elements is:
+ *
+ * pointer1 + 1
+ *
+ * We return pointer1 + 1 as k.
+ *
+ * The first k elements of nums will contain all the unique
+ * elements in their original sorted order.
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ *
+ * Why O(n)?
+ * The array is already sorted, so we do not need to sort it.
+ * The for loop scans through the array exactly once.
+ *
+ * The pointer1 also only moves forward and never goes
+ * backward.
+ *
+ * Therefore, the total work is linear:
+ *
+ * O(n)
+ *
+ * Why O(1) space?
+ * We modify the original array in-place and use only a
+ * constant number of extra variables such as pointer1,
+ * i, and n.
+ *
+ * No additional array, HashMap, HashSet, or other data
+ * structure is used.
+ *
+ * Important Observation:
+ * The array is already sorted. Therefore, if:
+ *
+ * nums[pointer1] == nums[i]
+ *
+ * the current element is a duplicate.
+ *
+ * If:
+ *
+ * nums[pointer1] != nums[i]
+ *
+ * the current element is a new unique value.
+ *
+ * This property of the sorted array allows us to solve the
+ * problem using the two-pointer technique in O(n) time.
+ *
+ * ============================================================
+ */
