@@ -27,20 +27,16 @@
 //     1 <= nums.length <= 3 * 104
 //     -100 <= nums[i] <= 100
 //     nums is sorted in non-decreasing order.// TWO POINTERS APPROACH
-import java.util.Arrays;
 
 public class rm_duplicates {
 
     public int removeDuplicates(int[] nums) {
-        Arrays.sort(nums);
         int n = nums.length;
         int pointer1 = 0;
-        System.out.print(nums[pointer1]);
         for (int i = 1; i < n; i++) {
             if (nums[pointer1] != nums[i]) {
                 nums[pointer1 + 1] = nums[i];
                 pointer1++;
-                return nums[pointer1];
             } else
                 continue;
         }
