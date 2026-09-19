@@ -26,8 +26,23 @@
 
 // 1<=nums.length<=100 0<=nums[i]<=100
 
+//BRUTE FROCE APPROACH
 public class next_permutation {
     public void nextPermutation(int[] nums) {
+        int n = nums.length;
+        for (int i = n; i > 0; i--) {
+            int j = i -1;
+            if()
+        }
 
     }
 }
+
+// TWO POINTER APPROACH
+// public class next_permutation {
+// public void nextPermutation(int[] nums) {
+// int n = nums.length;
+// int pos = nums.length-1;
+
+// }
+// }

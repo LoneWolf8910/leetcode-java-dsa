@@ -1,7 +1,7 @@
 # 🚀 LeetCode Java DSA
 
-> My journey of mastering Data Structures & Algorithms in Java
-> for Software Engineering Internships and Placements.
+> My journey of mastering **Data Structures & Algorithms in Java**  
+> for **Software Engineering Internships and Placements**.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Language-Java-orange?style=for-the-badge&logo=openjdk" />
@@ -18,12 +18,12 @@ This repository contains my solutions to **LeetCode and Data Structures & Algori
 
 The purpose of this repository is not just to collect solutions, but to build a strong understanding of:
 
-- Problem-solving
-- Data Structures
-- Algorithms
-- Time & Space Complexity
-- Common coding patterns
-- Interview problem-solving techniques
+- 🧩 Problem-solving
+- 🏗️ Data Structures
+- ⚙️ Algorithms
+- ⏱️ Time & Space Complexity
+- 🔁 Common coding patterns
+- 🎯 Interview problem-solving techniques
 
 I am maintaining this repository as part of my preparation for **Software Engineering Internships and Placements**.
 
@@ -33,7 +33,7 @@ I am maintaining this repository as part of my preparation for **Software Engine
 
 My preparation is organized by topic so that I can progressively build my problem-solving skills.
 
-### 🟢 Fundamentals
+## 🟢 Fundamentals
 
 - [x] Arrays
 - [ ] Strings
@@ -41,20 +41,20 @@ My preparation is organized by topic so that I can progressively build my proble
 - [ ] Two Pointers
 - [ ] Sliding Window
 
-### 🔵 Linear Data Structures
+## 🔵 Linear Data Structures
 
 - [ ] Linked List
 - [ ] Stack
 - [ ] Queue
 - [ ] Deque
 
-### 🟣 Searching & Sorting
+## 🟣 Searching & Sorting
 
 - [ ] Binary Search
 - [ ] Sorting Algorithms
 - [ ] Intervals
 
-### 🟠 Trees
+## 🟠 Trees
 
 - [ ] Binary Trees
 - [ ] Binary Search Trees
@@ -62,7 +62,7 @@ My preparation is organized by topic so that I can progressively build my proble
 - [ ] Priority Queue
 - [ ] Trie
 
-### 🔴 Graphs
+## 🔴 Graphs
 
 - [ ] Graph Traversal
 - [ ] BFS
@@ -71,7 +71,7 @@ My preparation is organized by topic so that I can progressively build my proble
 - [ ] Shortest Path
 - [ ] Union Find
 
-### 🟡 Advanced Algorithms
+## 🟡 Advanced Algorithms
 
 - [ ] Greedy
 - [ ] Backtracking
@@ -80,14 +80,35 @@ My preparation is organized by topic so that I can progressively build my proble
 
 ---
 
+# 🔥 Two Pointers — Pattern Breakdown
+
+I am organizing the **Two Pointers** topic into subfolders based on the type of problem in which the pattern is applied.
+
+This makes it easier to recognize **where and why Two Pointers can be used**, instead of treating it as one large topic.
+
+### 📁 Two Pointers Categories
+
+- [x] Arrays
+- [ ] Strings
+- [ ] Linked Lists
+- [ ] Sorted Arrays
+- [ ] Pair / Triplet Problems
+- [ ] In-place Array Problems
+- [ ] Partitioning Problems
+- [ ] Fast & Slow Pointers
+
+> Each category will contain the problems I solve while learning that specific application of the Two Pointers technique.
+
+---
+
 # 📊 Progress
 
 | Topic | Problems Solved |
 |-------|----------------:|
-| Arrays | 3 |
+| Arrays | 4 |
 | Strings | 0 |
 | Hashing | 0 |
-| Two Pointers | 2 |
+| Two Pointers | 3 |
 | Sliding Window | 0 |
 | Linked List | 0 |
 | Stack | 0 |
@@ -99,10 +120,12 @@ My preparation is organized by topic so that I can progressively build my proble
 | Backtracking | 0 |
 | Dynamic Programming | 0 |
 
-### 🎯 Current Goal
+---
+
+# 🎯 Current Goal
 
 ```text
 Target: 200+ Quality DSA Problems
 
 Progress
-[█░░░░░░░░░] 5 / 200+
+[█░░░░░░░░░] 7 / 200+
