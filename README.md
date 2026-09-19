@@ -103,22 +103,22 @@ This makes it easier to recognize **where and why Two Pointers can be used**, in
 
 # 📊 Progress
 
-| Topic | Problems Solved |
-|-------|----------------:|
-| Arrays | 4 |
-| Strings | 0 |
-| Hashing | 0 |
-| Two Pointers | 3 |
-| Sliding Window | 0 |
-| Linked List | 0 |
-| Stack | 0 |
-| Queue | 0 |
-| Binary Search | 0 |
-| Trees | 0 |
-| Graphs | 0 |
-| Greedy | 0 |
-| Backtracking | 0 |
-| Dynamic Programming | 0 |
+| Topic               | Problems Solved |
+| ------------------- | --------------: |
+| Arrays              |               4 |
+| Strings             |               0 |
+| Hashing             |               0 |
+| Two Pointers        |               3 |
+| Sliding Window      |               0 |
+| Linked List         |               0 |
+| Stack               |               0 |
+| Queue               |               0 |
+| Binary Search       |               0 |
+| Trees               |               0 |
+| Graphs              |               0 |
+| Greedy              |               0 |
+| Backtracking        |               0 |
+| Dynamic Programming |               0 |
 
 ---
 
@@ -129,3 +129,4 @@ Target: 200+ Quality DSA Problems
 
 Progress
 [█░░░░░░░░░] 7 / 200+
+```
