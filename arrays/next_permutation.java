@@ -25,24 +25,162 @@
 // Constraints:
 
 // 1<=nums.length<=100 0<=nums[i]<=100
+//BRUTE FORCE APPROACH
+// import java.util.Arrays;
 
-//BRUTE FROCE APPROACH
+// public class next_permutation {
+//     public void nextPermutation(int[] nums) {
+//         int n = nums.length;
+//         for (int j = n - 1; j > 0; j--) {
+//             int i = j - 1;
+//             if (nums[i] < nums[j]) {
+//                 int k = 0;
+//                 for (int a = n - 1; a > i; a--) {
+//                     if (nums[a] > nums[i]) {
+//                         k = a;
+//                         break;
+//                     }
+//                 }
+//                 int temp = nums[i];
+//                 nums[i] = nums[k];
+//                 nums[k] = temp;
+//                 Arrays.sort(nums, j, n);
+//                 break;
+//             } else
+//                 Arrays.sort(nums);
+//             break;
+//         }
+//         for (int x : nums) {
+//             System.out.println(x);
+//         }
+//     }
+// }
+
+// TWO POINTER APPROACH
 public class next_permutation {
     public void nextPermutation(int[] nums) {
         int n = nums.length;
-        for (int i = n; i > 0; i--) {
-            int j = i -1;
-            if()
+        for (int j = n - 1; j > 0; j--) {
+            int pivot = j - 1;
+            if (nums[pivot] < nums[j]) {
+                int k = 0;
+                for (int a = n - 1; a > pivot; a--) {
+                    if (nums[a] > nums[pivot]) {
+                        k = a;
+                        break;
+                    }
+                }
+                int temp = nums[pivot];
+                nums[pivot] = nums[k];
+                nums[k] = temp;
+
+                int left = pivot + 1;
+                int right = n - 1;
+                while (left < right) {
+                    int temp1 = nums[left];
+                    nums[left] = nums[right];
+                    nums[right] = temp1;
+                    left++;
+                    right--;
+                }
+
+                return;
+            }
+
+        }
+        int left = 0;
+        int right = n - 1;
+        while (left < right) {
+            int temp2 = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp2;
+            left++;
+            right--;
         }
 
+        for (int x : nums) {
+            System.out.println(x);
+        }
     }
 }
 
-// TWO POINTER APPROACH
 // public class next_permutation {
 // public void nextPermutation(int[] nums) {
 // int n = nums.length;
-// int pos = nums.length-1;
+// int p = -1;
+// for (int i = n - 2; i >= 0; i--) {
+// if (nums[i] < nums[i + 1]) {
+// p = i;
+// break;
+// }
+// }
+// if (p != -1) {
+// for (int i = n - 1; i >= 0; i--) {
+// if (nums[i] > nums[p]) {
+// int temp = nums[p];
+// nums[p] = nums[i];
+// nums[i] = temp;
+// break;
+// }
+// }
+// }
+// int l = p + 1;
+// int r = n - 1;
+// while (l < r) {
+// int temp = nums[l];
+// nums[l] = nums[r];
+// nums[r] = temp;
+// l++;
+// r--;
+// }
+// }
+// }
 
-// }
-// }
+/*
+ * ============================================================
+ * Problem: Next Permutation
+ * Platform: LeetCode
+ * Difficulty: Medium
+ * Topic: Arrays
+ * Pattern: Two Pointers + Array Manipulation
+ *
+ * Approach:
+ * First, we scan the array from right to left to find the pivot,
+ * which is the first element that is smaller than the element
+ * immediately after it.
+ *
+ * We then scan from the right side of the array to find the
+ * smallest element that is greater than the pivot and swap
+ * these two elements.
+ *
+ * After the swap, the elements after the pivot are reversed
+ * using the two-pointer technique.
+ *
+ * Reversing the suffix is enough because the suffix is already
+ * arranged in descending order when the pivot is found. Reversing
+ * it puts the suffix into the smallest possible ascending order.
+ *
+ * If no pivot is found, the array is already the largest possible
+ * permutation. In that case, we reverse the entire array to obtain
+ * the smallest permutation.
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ *
+ * Why O(n)?
+ * We scan the array from right to left to find the pivot,
+ * scan from right to left again to find the element to swap,
+ * and finally reverse the suffix using two pointers.
+ *
+ * Each operation takes O(n) time, and since these operations are
+ * performed sequentially, the overall time complexity remains O(n).
+ *
+ * Why O(1) space?
+ * We modify the array in-place and use only a constant number
+ * of extra variables for indexes and swapping.
+ *
+ * This optimized approach avoids sorting the suffix, which would
+ * take O(n log n), and instead reverses it in O(n) using two pointers.
+ *
+ * ============================================================
+ */

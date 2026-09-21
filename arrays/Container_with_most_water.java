@@ -16,37 +16,36 @@
 // Input: height = [1,1]
 // Output: 1
 
- 
-
 // Constraints:
 
 //     n == height.length
 //     2 <= n <= 105
 //     0 <= height[i] <= 104
 
-
 //BRUTE FORCE APPROACH
 public class Container_with_most_water {
     public int maxArea(int[] height) {
         int n = height.length;
         int maxcapacity = 0;
-        for(int i = 0; i < n; i++){
-            for(int j = i+1; j < n; j++){
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
                 int capacity = Math.abs(Math.min(height[i], height[j]) * (j - i));
-                if(capacity > maxcapacity)
-                    {
-                        maxcapacity = capacity;
-                    }
+                if (capacity > maxcapacity) {
+                    maxcapacity = capacity;
                 }
             }
-            
-            return maxcapacity;
         }
-    }
-    
-    //But this wont be submitted there because the time complexity or teh time required in teh problem is less and thsi will take long time for gettting executed for large inputs. So we will use two pointer approach to solve this problem in O(n) time complexity.
 
-//TWO POINTER APPROACH
+        return maxcapacity;
+    }
+}
+
+// But this wont be submitted there because the time complexity or teh time
+// required in teh problem is less and thsi will take long time for gettting
+// executed for large inputs. So we will use two pointer approach to solve this
+// problem in O(n) time complexity.
+
+// TWO POINTER APPROACH
 class Solution {
     public int maxArea(int[] height) {
 
@@ -89,15 +88,19 @@ class Solution {
  * Approach:
  * We use two pointers, one at the beginning and one at the end of the array.
  *
- * We calculate the area formed by the lines at the two pointers and update the maximum area if necessary.
+ * We calculate the area formed by the lines at the two pointers and update the
+ * maximum area if necessary.
  *
- * We then move the pointer pointing to the shorter line inward, as this may lead to a larger area.
+ * We then move the pointer pointing to the shorter line inward, as this may
+ * lead to a larger area.
  *
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  *
  * Why O(n)?
- * We traverse the array only once, moving the pointers towards each other until they meet.
- * now we will submit this code because it is optimized and will take less time to execute for large inputs.
- *============================================================= 
-*/
+ * We traverse the array only once, moving the pointers towards each other until
+ * they meet.
+ * now we will submit this code because it is optimized and will take less time
+ * to execute for large inputs.
+ * =============================================================
+ */

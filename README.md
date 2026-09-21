@@ -38,7 +38,7 @@ My preparation is organized by topic so that I can progressively build my proble
 - [x] Arrays
 - [ ] Strings
 - [ ] Hashing
-- [ ] Two Pointers
+- [x] Two Pointers
 - [ ] Sliding Window
 
 ### 🔵 Linear Data Structures
@@ -50,7 +50,7 @@ My preparation is organized by topic so that I can progressively build my proble
 
 ### 🟣 Searching & Sorting
 
-- [ ] Binary Search
+- [x] Binary Search
 - [ ] Sorting Algorithms
 - [ ] Intervals
 
@@ -82,22 +82,22 @@ My preparation is organized by topic so that I can progressively build my proble
 
 # 📊 Progress
 
-| Topic | Problems Solved |
-|-------|----------------:|
-| Arrays | 3 |
-| Strings | 0 |
-| Hashing | 0 |
-| Two Pointers | 2 |
-| Sliding Window | 0 |
-| Linked List | 0 |
-| Stack | 0 |
-| Queue | 0 |
-| Binary Search | 0 |
-| Trees | 0 |
-| Graphs | 0 |
-| Greedy | 0 |
-| Backtracking | 0 |
-| Dynamic Programming | 0 |
+| Topic               | Problems Solved |
+| ------------------- | --------------: |
+| Arrays              |               5 |
+| Strings             |               0 |
+| Hashing             |               0 |
+| Two Pointers        |               3 |
+| Sliding Window      |               0 |
+| Linked List         |               0 |
+| Stack               |               0 |
+| Queue               |               0 |
+| Binary Search       |               1 |
+| Trees               |               0 |
+| Graphs              |               0 |
+| Greedy              |               0 |
+| Backtracking        |               0 |
+| Dynamic Programming |               0 |
 
 ### 🎯 Current Goal
 
@@ -105,4 +105,5 @@ My preparation is organized by topic so that I can progressively build my proble
 Target: 200+ Quality DSA Problems
 
 Progress
-[█░░░░░░░░░] 5 / 200+
+[█░░░░░░░░░] 9 / 200+
+```
