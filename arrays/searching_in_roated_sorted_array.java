@@ -39,7 +39,6 @@ public class searching_in_roated_sorted_array {
             }
             right--;
         }
-
         return -1;
     }
 }
