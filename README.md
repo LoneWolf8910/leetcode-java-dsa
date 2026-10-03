@@ -105,5 +105,5 @@ My preparation is organized by topic so that I can progressively build my proble
 Target: 200+ Quality DSA Problems
 
 Progress
-[█░░░░░░░░░] 17 / 200+
+[██░░░░░░░░░] 17 / 200+
 ```
