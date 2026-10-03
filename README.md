@@ -40,6 +40,7 @@ My preparation is organized by topic so that I can progressively build my proble
 - [ ] Hashing
 - [x] Two Pointers
 - [ ] Sliding Window
+- [ ] Prefix Sum
 
 ### 🔵 Linear Data Structures
 
@@ -89,6 +90,7 @@ My preparation is organized by topic so that I can progressively build my proble
 | Hashing              |               0 |
 | Two Pointers         |               3 |
 | Sliding Window       |               0 |
+| Prefix Sum           |               0 |
 | Linked List          |               0 |
 | Stack                |               0 |
 | Queue                |               0 |
