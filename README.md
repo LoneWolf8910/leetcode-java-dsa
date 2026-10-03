@@ -92,7 +92,7 @@ My preparation is organized by topic so that I can progressively build my proble
 | Linked List          |               0 |
 | Stack                |               0 |
 | Queue                |               0 |
-| Searching Techniques |               2 |
+| Searching Techniques |               6 |
 | Trees                |               0 |
 | Graphs               |               0 |
 | Greedy               |               0 |
@@ -105,5 +105,5 @@ My preparation is organized by topic so that I can progressively build my proble
 Target: 200+ Quality DSA Problems
 
 Progress
-[█░░░░░░░░░] 13 / 200+
+[█░░░░░░░░░] 17 / 200+
 ```
