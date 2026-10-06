@@ -40,7 +40,7 @@ My preparation is organized by topic so that I can progressively build my proble
 - [ ] Hashing
 - [x] Two Pointers
 - [ ] Sliding Window
-- [ ] Prefix Sum
+- [x] Prefix Sum
 
 ### 🔵 Linear Data Structures
 
@@ -90,7 +90,7 @@ My preparation is organized by topic so that I can progressively build my proble
 | Hashing              |               0 |
 | Two Pointers         |               3 |
 | Sliding Window       |               0 |
-| Prefix Sum           |               0 |
+| Prefix Sum           |               2 |
 | Linked List          |               0 |
 | Stack                |               0 |
 | Queue                |               0 |
@@ -107,5 +107,5 @@ My preparation is organized by topic so that I can progressively build my proble
 Target: 200+ Quality DSA Problems
 
 Progress
-[██░░░░░░░░░] 17 / 200+
+[██░░░░░░░░░] 19 / 200+
 ```
