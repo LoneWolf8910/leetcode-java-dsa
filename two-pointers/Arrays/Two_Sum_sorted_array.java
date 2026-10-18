@@ -46,3 +46,52 @@ public class Two_Sum_sorted_array {
         return new int[] { -1, -1 };
     }
 }
+
+
+/*
+ * ============================================================
+ * Problem: Two Sum II - Input Array Is Sorted
+ * Platform: LeetCode
+ * Problem Number: 167
+ * Difficulty: Medium
+ * Topic: Arrays
+ * Pattern: Two Pointers
+ *
+ * Approach:
+ * 1. Initialize two pointers:
+ * - left = 0, pointing to the first element.
+ * - right = n - 1, pointing to the last element.
+ * 2. Calculate the sum of the elements at both pointers.
+ * 3. If the sum equals the target, return their 1-based indices.
+ * 4. If the sum is greater than the target, decrement right
+ * to obtain a smaller sum.
+ * 5. If the sum is less than the target, increment left
+ * to obtain a larger sum.
+ * 6. Repeat until the pointers meet or cross.
+ * 7. Return [-1, -1] as a fallback if no valid pair is found.
+ *
+ * Why Two Pointers?
+ * The array is sorted in ascending order.
+ * Moving the left pointer right increases the potential sum,
+ * while moving the right pointer left decreases it.
+ * This eliminates the need to check every possible pair.
+ *
+ * Time Complexity: O(n)
+ * - Each iteration moves either the left or right pointer
+ * inward by one position.
+ * - Each pointer moves at most n positions.
+ *
+ * Space Complexity: O(1)
+ * - Only a constant number of variables are used.
+ * - No additional data structure is required.
+ *
+ * Key Idea:
+ * Use the sorted order to adjust the sum efficiently by
+ * moving the appropriate pointer instead of using nested loops.
+ *
+ * Important:
+ * LeetCode 167 requires 1-based indices, so return left + 1
+ * and right + 1 rather than the original array indices.
+ *
+ * ============================================================
+ */
