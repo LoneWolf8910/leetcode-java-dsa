@@ -1,4 +1,4 @@
-// This is basically a program that presents the Selection Sort Algorithm as well as teh Selection sort technique.
+// This is basically a program that presents the Selection Sort Algorithm as well as the; Selection sort technique.
 
 import java.util.*;
 
@@ -39,3 +39,5 @@ public class selection_sort {
         selectionSort(nums);
     }
 }
+
+// The Selection Sort technique is a simple and intuitive sorting algorithm that works by repeatedly finding the minimum element from the unsorted portion of the array and moving it to the sorted portion. It has a time complexity of O(n^2) in the average and worst cases, making it inefficient on large lists, and generally performs worse than the similar insertion sort. However, it has the advantage of being easy to understand and implement.

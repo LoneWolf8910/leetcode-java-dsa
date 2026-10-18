@@ -23,7 +23,7 @@
 //     0 <= height[i] <= 104
 
 //BRUTE FORCE APPROACH
-public class Container_with_most_water {
+public class RE_Container_with_most_water {
     public int maxArea(int[] height) {
         int n = height.length;
         int maxcapacity = 0;
