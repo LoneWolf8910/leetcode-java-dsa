@@ -23,6 +23,8 @@ public class range_sum_quesry_2d {
     }
     
     public int sumRegion(int row1, int col1, int row2, int col2) {
+
+        
         return 0;
     }
 }

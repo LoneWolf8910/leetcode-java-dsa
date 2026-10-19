@@ -29,6 +29,6 @@
 
 public class min_size_subarray_sum {
     public int minSubArrayLen(int target, int[] nums) {
-        
+        return 0;
     }
 }
