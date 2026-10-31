@@ -62,10 +62,9 @@ public class original_from_doubled_array {
             } else if (num == 0) {
                 if (freqMap.get(0) < 2) {
                     return new int[] {};
-                } 
+                }
                 freqMap.put(num, (freqMap.get(num) - 2));
                 result[index++] = num;
-
             } else
                 return new int[] {};
         }
