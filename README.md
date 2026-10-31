@@ -86,7 +86,7 @@ My preparation is organized by topic so that I can progressively build my proble
 | Topic                | Problems Solved |
 | -------------------- | --------------: |
 | Arrays               |               8 |
-| Strings              |               0 |
+| Strings              |               1 |
 | Hash                 |               9 |
 | Two Pointers         |               4 |
 | Sliding Window       |               0 |
@@ -107,5 +107,5 @@ My preparation is organized by topic so that I can progressively build my proble
 Target: 200+ Quality DSA Problems
 
 Progress
-[██░░░░░░░░░] 30 / 200+
+[██░░░░░░░░░] 31 / 200+
 ```
