@@ -27,14 +27,10 @@ public class reverse_words {
         String[] words = s.trim().split("\\s+");
         
         int n = words.length;
-        // String[] result = new String[n];
-        // int index = 0;
 
         StringBuilder sb = new StringBuilder();
 
         for (int i = n-1; i >= 0; i--) {
-            // result[index] = words[i];
-            // index++;
             if (i == n-1) {
                 sb.append(words[i]);
             }
