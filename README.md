@@ -36,7 +36,7 @@ My preparation is organized by topic so that I can progressively build my proble
 ### 🟢 Fundamentals
 
 - [x] Arrays
-- [ ] Strings
+- [x] Strings
 - [x] Hash
 - [x] Two Pointers
 - [ ] Sliding Window
@@ -52,7 +52,7 @@ My preparation is organized by topic so that I can progressively build my proble
 ### 🟣 Searching & Sorting
 
 - [x] Binary Search
-- [ ] Sorting Algorithms
+- [x] Sorting Algorithms
 - [ ] Intervals
 
 ### 🟠 Trees
