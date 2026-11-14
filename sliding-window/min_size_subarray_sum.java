@@ -29,6 +29,80 @@
 
 public class min_size_subarray_sum {
     public int minSubArrayLen(int target, int[] nums) {
-        return 0;
+        int left = 0;
+        int right = 0;
+        int sum =0;
+        int minlength = Integer.MAX_VALUE;
+
+        for (right = 0; right < nums.length; right++) {
+            sum += nums[right];
+
+            while (sum >= target) {
+                minlength = Math.min(minlength, (right - left + 1));
+                sum -= nums[left];
+                left++;
+            }
+        }
+
+        if (minlength > nums.length)
+            return 0;
+        else
+            return minlength;
     }
 }
+
+
+/*
+ * ============================================================
+ * Problem: Minimum Size Subarray Sum
+ * Platform: LeetCode
+ * Problem Number: 209
+ * Difficulty: Medium
+ * Topic: Array, Sliding Window
+ * Pattern: Variable Size Sliding Window
+ *
+ * Approach:
+ * 1. Initialize two pointers:
+ * - left = 0 (starting position of the window).
+ * - right = 0 (ending position of the window).
+ *
+ * 2. Initialize sum = 0 to maintain the sum of the current
+ * sliding window.
+ *
+ * 3. Initialize minlength = Integer.MAX_VALUE to store
+ * the minimum valid subarray length found so far.
+ *
+ * 4. Expand the window by moving the right pointer through
+ * the array and adding nums[right] to the current sum.
+ *
+ * 5. Whenever sum >= target:
+ * - Calculate the current window length using
+ * (right - left + 1).
+ * - Update minlength using Math.min().
+ * - Shrink the window by subtracting nums[left]
+ * from the current sum.
+ * - Move the left pointer forward.
+ *
+ * 6. Continue shrinking while the current sum remains
+ * greater than or equal to the target. This helps find
+ * the smallest valid window ending at the current right.
+ *
+ * 7. After traversing the array:
+ * - If no valid subarray was found, return 0.
+ * - Otherwise, return minlength.
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ *
+ * Key Idea:
+ * Expand the window using the right pointer until its sum
+ * reaches the target. Then shrink it using the left pointer
+ * while maintaining a valid sum, updating the minimum
+ * subarray length along the way.
+ *
+ * Important:
+ * This sliding window approach works because the array
+ * contains positive integers. Removing an element from
+ * the left decreases the window sum.
+ * ============================================================
+ */

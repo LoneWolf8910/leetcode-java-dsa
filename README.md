@@ -39,7 +39,7 @@ My preparation is organized by topic so that I can progressively build my proble
 - [x] Strings
 - [x] Hash
 - [x] Two Pointers
-- [ ] Sliding Window
+- [x] Sliding Window
 - [x] Prefix Sum
 
 ### 🔵 Linear Data Structures
@@ -88,8 +88,8 @@ My preparation is organized by topic so that I can progressively build my proble
 | Arrays               |               8 |
 | Strings              |               4 |
 | Hash                 |               9 |
-| Two Pointers         |               7 |
-| Sliding Window       |               0 |
+| Two Pointers         |               8 |
+| Sliding Window       |               3 |
 | Prefix Sum           |               3 |
 | Linked List          |               0 |
 | Stack                |               0 |
@@ -107,5 +107,5 @@ My preparation is organized by topic so that I can progressively build my proble
 Target: 200+ Quality DSA Problems
 
 Progress
-[██░░░░░░░░░] 37 / 200+
+[███░░░░░░░░░] 41 / 200+
 ```
