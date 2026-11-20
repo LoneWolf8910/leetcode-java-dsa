@@ -1,82 +1,48 @@
-// Given an integer array nums and an integer val,remove all occurrences of val in nums in-place.The order of the elements may be changed.Then return the number of elements in nums which are not equal to val.
-
-// Consider the number of elements in nums which are not equal to val be k,to get accepted,you need to do the following things:
-
-// Change the array nums such that the first k elements of nums contain the elements which are not equal to val.The remaining elements of nums are not important as well as the size of nums.Return k.
-
-// Custom Judge:
-
-// The judge will test your solution with the following code:
-
-// int[]nums=[...]; // Input array
-// int val=...; // Value to remove
-// int[]expectedNums=[...]; // The expected answer with correct length.
-//                          // It is sorted with no values equaling val.
-
-// int k=removeElement(nums,val); // Calls your implementation
-
-// assert k==expectedNums.length;sort(nums,0,k); // Sort the first k elements of nums
-// for(int i=0;i<actualLength;i++){assert nums[i]==expectedNums[i];}
-
-// If all assertions pass,then your solution will be accepted.
+// Given a string s, find the length of the longest substring without duplicate characters.
 
 // Example 1:
 
-// Input:nums=[3,2,2,3],val=3 Output:2,nums=[2,2,_,_]Explanation:Your function should return k=2,with the first two elements of nums being 2. It does not matter what you leave beyond the returned k(hence they are underscores).
-
+// Input: s = "abcabcbb"
+// Output: 3
+// Explanation: The answer is "abc", with the length of 3. Note that "bca" and "cab" are also correct answers.
 // Example 2:
 
-// Input:nums=[0,1,2,2,3,0,4,2],val=2 Output:5,nums=[0,1,4,0,3,_,_,_]Explanation:Your function should return k=5,with the first five elements of nums containing 0,0,1,3,and 4. Note that the five elements can be returned in any order.It does not matter what you leave beyond the returned k(hence they are underscores).
+// Input: s = "bbbbb"
+// Output: 1
+// Explanation: The answer is "b", with the length of 1.
+// Example 3:
+
+// Input: s = "pwwkew"
+// Output: 3
+// Explanation: The answer is "wke", with the length of 3.
+// Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
 // Constraints:
 
-// 0<=nums.length<=100 0<=nums[i]<=50 0<=val<=100
+// 0 <= s.length <= 105
+// s consists of English letters, digits, symbols and spaces
 
-import java.util.HashMap;
-import java.util.Arrays;
+import java.util.HashSet;
 
 public class practice {
-   public int[] findOriginalArray(int[] changed) { 
-      int n = changed.length;
-      if (n % 2 != 0) {
-         return new int[] {};
-      }
+   public int lengthOfLongestSubstring(String s) {
+      int l = s.length();
+      int left = 0;
+      int maxlen =0;
 
-      HashMap <Integer, Integer> map = new HashMap<>();
-      for (int num : changed) {
-         map.put(num, map.getOrDefault(num, 0)+1 );
-      }
+      HashSet<Character> set = new HashSet<>();
 
-      int[] result = new int[n/2];
-      int index = 0;
-
-      Arrays.sort(changed);
-
-      for (int num : changed ) {
-         if (map.get(num) == 0) {
-            continue;
+      for (int right = 0; right < l; right++) {
+         while (set.contains(s.charAt(right))) {
+            set.remove(s.charAt(left));
+            left++;
          }
 
-         int num2 = 2 * num;
-
-         if (map.get(num2) > 0) {
-            result[index++] = num;
-            map.put(num, map.get(num)-1);
-            map.put(num2, map.get(num2) - 1);
-         }
-         else if(num == 0){
-            if (map.get(num) % 2 == 0) {
-               result[index++] = num;
-               map.put(num, map.get(num) - 2);
-            }
-            else
-               return new int[] {};
-         }
-
-         else 
-            return new int[] {};
+         set.add(s.charAt(right));
+         maxlen = Math.max(maxlen, set.size());
       }
-      
-      return result;
+
+
+      return maxlen;
    }
 }
