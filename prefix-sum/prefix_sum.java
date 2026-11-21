@@ -7,6 +7,10 @@ public class prefix_sum {
         int n = sc.nextInt();
         int[] arr = new int[n];
 
+        for (int i = 0; i < n; i++) {
+            arr[i] =sc.nextInt();
+        }
+
         // Prefix array has one extra space
         int[] prefix = new int[arr.length + 1];
 

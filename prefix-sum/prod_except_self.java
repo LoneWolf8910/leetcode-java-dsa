@@ -34,6 +34,7 @@ public class prod_except_self {
         left[0] = 1;
         right[n-1] = 1;
 
+
         //for the right side....
         for(int i = 1; i <n; i++){
             left[i] = left[i-1] * nums[i-1];
